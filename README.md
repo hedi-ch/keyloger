@@ -1,2 +1,4 @@
 # keyloger
 this keyloger with python 
+this python script will creat file key.log with date information 
+for know you can use it for review your child daily activities 
