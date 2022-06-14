@@ -23,7 +23,8 @@ def on_press(key):
 		word_count+=1
 		print(f"the {key} key is pressed ")
 		word+=str(key)[1:-1]
+
 	
 
-with Listener(on_press=on_press) as listener:
+with Listener(on_press=on_press ,on_release=on_release) as listener:
 	listener.join()
